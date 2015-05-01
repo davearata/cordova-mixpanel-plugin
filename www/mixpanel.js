@@ -28,5 +28,9 @@ mixpanel.track = function(eventName, eventProperties, onSuccess, onFail) {
   exec(onSuccess, onFail, 'Mixpanel', 'track', [eventName, eventProperties]);
 };
 
+mixpanel.peopleSet = function(peopleProperties, onSuccess, onFail) {
+  exec(onSuccess, onFail, 'Mixpanel', 'peopleSet', [peopleProperties]);
+};
+
 
 module.exports = mixpanel;
