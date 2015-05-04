@@ -26,7 +26,7 @@ public class MixpanelPlugin extends CordovaPlugin {
         IDENTIFY("identify"),
         INIT("init"),
         RESET("reset"),
-        TRACK("track");
+        TRACK("track"),
         PEOPLE_SET("peopleSet");
 
         private final String name;
