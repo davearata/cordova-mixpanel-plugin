@@ -140,6 +140,7 @@ public class MixpanelPlugin extends CordovaPlugin {
             return false;
         }
         mixpanel.identify(uniqueId);
+        mixpanel.getPeople().identify(uniqueId);
         cbCtx.success();
         return true;
     }
